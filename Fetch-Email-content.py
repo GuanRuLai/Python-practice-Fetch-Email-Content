@@ -1,11 +1,11 @@
 import imaplib
 import email as em
 M = imaplib.IMAP4_SSL("imap.gmail.com")
-email = "132548t@gmail.com"
-password = "zvwajhuygbgcpzab"
+email = {Your email}
+password = {Your password}
 M.login(email, password)
 M.select("inbox")
-result, ids = M.search(None, "FROM 132548t@gmail.com")
+result, ids = M.search(None, "FROM {Your email}")
 
 my_str = ids[0].decode("utf-8") # bytes to string
 my_email_list = my_str.split(" ")
