@@ -2,7 +2,7 @@ import imaplib
 import email as em
 M = imaplib.IMAP4_SSL("imap.gmail.com")
 email = {Your email}
-password = {Your password}
+password = {Your google api}
 M.login(email, password)
 M.select("inbox")
 result, ids = M.search(None, "FROM {Your email}")
